@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ITask, IUpdateTask } from "../../types";
 import TaskCard from "./TaskCard";
 import Grid from "@mui/material/Grid2";
@@ -9,10 +9,10 @@ import {
   FormControl,
   InputLabel,
   MenuItem,
-  Paper,
+  
   Select,
   SelectChangeEvent,
-  styled,
+  
 } from "@mui/material";
 import NothingHere from "../NothingHere";
 
@@ -34,7 +34,7 @@ const TaskList: React.FC<TaskListProps> = ({
   onDelete,
   onEdit,
   hasMore,
-  page,
+
   setPage,
 }) => {
   // Handle filter change for status

@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import { ITask, IUpdateTask } from "../../types";
 import EditTask from "../Modals/EditTask";
 
