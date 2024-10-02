@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# Task-Managment-Forntend
+This repository contains the source code of backend for a full-stack Task managment applicaiton. The project is divided into two parts:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. **Forntend** - A complete [React.js](https://react.dev/) frontend located in this repository.
+2. **Backend** - A Node.js backend with Socket.io for real time data visualisation in the [Task-Managment-Backend](https://github.com/SAFVAN-C-M-C/Task-Managment-Backend) repository.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Getting Started(locally)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Clone the Repository
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+https://github.com/SAFVAN-C-M-C/Task-Managment-Forntend.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 2. Setting up the Vite React
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Install the required dependencies using npm:
+
+```bash
+npm install
 ```
+### 3. Set Up Environment Variables
+
+Create a `.env` file at the root of the project with the following variables:
+
+```env
+VITE_CHAT_ME_APP_SERVER_URL=//your server link (http://localhost:4040)//locally
+```
+
+### 4. Run the app
+
+After setting up Elasticsearch, run the server:
+
+```bash
+npm run dev
+```
+or 
+
+The APP will start on `http://localhost:5173/`.
+
+
+
+
+### 5. Deployed link
+`https://task-managment-blue-two.vercel.app/`
+
+
+## API Documentation
+
+You can find the API documentation [here](https://documenter.getpostman.com/view/30048349/2sAXxLAZ4H).
