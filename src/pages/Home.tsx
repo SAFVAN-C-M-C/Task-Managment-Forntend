@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // src/pages/Home.tsx
 import React, { useEffect, useState } from "react";
@@ -72,7 +73,7 @@ const Home: React.FC = () => {
     if (page > 1) {
       pageLoad({ page, filter });
     }
-  }, [page]);
+  }, [filter, page, pageLoad]);
 
   const handleAddTask = async (task: ICreateTask) => {
     try {
